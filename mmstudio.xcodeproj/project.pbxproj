@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4E2BBE15832E2F103356655 /* Pods_mmstudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D218830A67FF088756BE5A7 /* Pods_mmstudio.framework */; };
 		F7E1CD70217F57180045CB3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E1CD6F217F57180045CB3C /* AppDelegate.swift */; };
 		F7E1CD72217F57180045CB3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E1CD71217F57180045CB3C /* ViewController.swift */; };
 		F7E1CD75217F57180045CB3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7E1CD73217F57180045CB3C /* Main.storyboard */; };
 		F7E1CD77217F571B0045CB3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7E1CD76217F571B0045CB3C /* Assets.xcassets */; };
 		F7E1CD7A217F571B0045CB3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7E1CD78217F571B0045CB3C /* LaunchScreen.storyboard */; };
+		F7E1CD82217F62D60045CB3C /* HeaderCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E1CD81217F62D60045CB3C /* HeaderCellView.swift */; };
+		F7E1CD84217F65F00045CB3C /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E1CD83217F65F00045CB3C /* CellView.swift */; };
+		F7E1CD86217F66AD0045CB3C /* NewProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E1CD85217F66AD0045CB3C /* NewProjectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E420594601643E360457C7B /* Pods-mmstudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mmstudio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mmstudio/Pods-mmstudio.debug.xcconfig"; sourceTree = "<group>"; };
+		6D218830A67FF088756BE5A7 /* Pods_mmstudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mmstudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D8A00DF542BADB75D577E3 /* Pods-mmstudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mmstudio.release.xcconfig"; path = "Pods/Target Support Files/Pods-mmstudio/Pods-mmstudio.release.xcconfig"; sourceTree = "<group>"; };
 		F7E1CD6C217F57180045CB3C /* mmstudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mmstudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E1CD6F217F57180045CB3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7E1CD71217F57180045CB3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,9 @@
 		F7E1CD76217F571B0045CB3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7E1CD79217F571B0045CB3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7E1CD7B217F571B0045CB3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7E1CD81217F62D60045CB3C /* HeaderCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCellView.swift; sourceTree = "<group>"; };
+		F7E1CD83217F65F00045CB3C /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		F7E1CD85217F66AD0045CB3C /* NewProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E2BBE15832E2F103356655 /* Pods_mmstudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE842A30AE611761F3212489 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D218830A67FF088756BE5A7 /* Pods_mmstudio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8C13E14A678266E0A389B44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E420594601643E360457C7B /* Pods-mmstudio.debug.xcconfig */,
+				B2D8A00DF542BADB75D577E3 /* Pods-mmstudio.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F7E1CD63217F57180045CB3C = {
 			isa = PBXGroup;
 			children = (
 				F7E1CD6E217F57180045CB3C /* mmstudio */,
 				F7E1CD6D217F57180045CB3C /* Products */,
+				C8C13E14A678266E0A389B44 /* Pods */,
+				BE842A30AE611761F3212489 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +90,9 @@
 				F7E1CD76217F571B0045CB3C /* Assets.xcassets */,
 				F7E1CD78217F571B0045CB3C /* LaunchScreen.storyboard */,
 				F7E1CD7B217F571B0045CB3C /* Info.plist */,
+				F7E1CD81217F62D60045CB3C /* HeaderCellView.swift */,
+				F7E1CD83217F65F00045CB3C /* CellView.swift */,
+				F7E1CD85217F66AD0045CB3C /* NewProjectViewController.swift */,
 			);
 			path = mmstudio;
 			sourceTree = "<group>";
@@ -71,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7E1CD7E217F571B0045CB3C /* Build configuration list for PBXNativeTarget "mmstudio" */;
 			buildPhases = (
+				72836D5A2A3811D143E7F361 /* [CP] Check Pods Manifest.lock */,
 				F7E1CD68217F57180045CB3C /* Sources */,
 				F7E1CD69217F57180045CB3C /* Frameworks */,
 				F7E1CD6A217F57180045CB3C /* Resources */,
+				60E5748437F94F3103751219 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +165,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		60E5748437F94F3103751219 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mmstudio/Pods-mmstudio-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MIDITimeTableView/MIDITimeTableView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MIDITimeTableView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mmstudio/Pods-mmstudio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72836D5A2A3811D143E7F361 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mmstudio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F7E1CD68217F57180045CB3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E1CD84217F65F00045CB3C /* CellView.swift in Sources */,
+				F7E1CD82217F62D60045CB3C /* HeaderCellView.swift in Sources */,
 				F7E1CD72217F57180045CB3C /* ViewController.swift in Sources */,
 				F7E1CD70217F57180045CB3C /* AppDelegate.swift in Sources */,
+				F7E1CD86217F66AD0045CB3C /* NewProjectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +345,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -280,11 +357,13 @@
 		};
 		F7E1CD7F217F571B0045CB3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E420594601643E360457C7B /* Pods-mmstudio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PG98TTFS9P;
 				INFOPLIST_FILE = mmstudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +377,13 @@
 		};
 		F7E1CD80217F571B0045CB3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2D8A00DF542BADB75D577E3 /* Pods-mmstudio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PG98TTFS9P;
 				INFOPLIST_FILE = mmstudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
